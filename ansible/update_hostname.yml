@@ -1,0 +1,8 @@
+- name: Update hostname
+  hosts: localhost
+  tasks: 
+  - name: Update hostname file
+    replace:
+      dest: /etc/hostname
+      regaxp: '^(.+)$'
+      replace: 'pavlo-kvack-lab2'
