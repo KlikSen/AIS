@@ -4,5 +4,5 @@
   - name: Update hostname file
     replace:
       dest: /etc/hostname
-      regaxp: '^(.+)$'
+      regexp: '^(.+)$'
       replace: 'pavlo-kvack-lab2'
